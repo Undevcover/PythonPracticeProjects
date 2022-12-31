@@ -8,7 +8,7 @@ def guessGame(limit):
     myGuess = 0;
     while(myGuess != compGuess):
         count = count + 1
-        myGuess = eval(input("Enter your guess: "))
+        myGuess = eval(input(f"Guess a number between 1 and {limit}: "))
         if (compGuess > myGuess):
             print("Too Low, try again")
         elif (compGuess < myGuess):
